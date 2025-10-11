@@ -1,0 +1,1 @@
+new_encounter([global.enemies.slime, global.enemies.slime]);
