@@ -3,7 +3,7 @@ draw_sprite(spr_battle_background_temp, 0, x, y)
 
 // draw units in depth order
 var unit_with_current_turn = unit_turn_order[turn].id;
-for (i = 0; i < array_length(unit_turn_order); i++)
+for (var i = 0; i < array_length(unit_turn_order); i++)
 {
 	with (unit_render_order[i])
 	{

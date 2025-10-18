@@ -69,7 +69,6 @@
     {"id":{"name":"scr_init","path":"scripts/scr_init/scr_init.yy",},},
     {"id":{"name":"scr_macros","path":"scripts/scr_macros/scr_macros.yy",},},
     {"id":{"name":"scr_menu_functions","path":"scripts/scr_menu_functions/scr_menu_functions.yy",},},
-    {"id":{"name":"psr_slime_new","path":"sprites/psr_slime_new/psr_slime_new.yy",},},
     {"id":{"name":"spr_bandit","path":"sprites/spr_bandit/spr_bandit.yy",},},
     {"id":{"name":"spr_bat","path":"sprites/spr_bat/spr_bat.yy",},},
     {"id":{"name":"spr_battle_background_temp","path":"sprites/spr_battle_background_temp/spr_battle_background_temp.yy",},},

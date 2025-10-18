@@ -178,21 +178,35 @@ function battle_state_preform_action()
 			
 			if (variable_struct_exists(current_action, "effect_sprite"))
 			{
-				if (current_action.effect_on_target == MODE.ALWAYS) || ( (current_action.effect_on_target == MODE.VARIES) && (array_length(current_targets) <= 1) )
+				current_action.func(current_user, current_targets);
+				if (variable_struct_exists(current_action, "failed"))
 				{
-					for (var i = 0; i < array_length(current_targets); i++)
+					if (current_action.failed == false)
 					{
-						instance_create_depth(current_targets[i].x, current_targets[i].y, current_targets[i].depth - 1, obj_battle_effect, {sprite_index : current_action.effect_sprite});
+						if (current_action.effect_on_target == MODE.ALWAYS) || ( (current_action.effect_on_target == MODE.VARIES) && (array_length(current_targets) <= 1) )
+						{
+							for (var i = 0; i < array_length(current_targets); i++)
+							{
+								instance_create_depth(current_targets[i].x, current_targets[i].y, current_targets[i].depth - 1, obj_battle_effect, {sprite_index : current_action.effect_sprite});
+							}
+						}
+						else
+						{
+							var _effect_sprite = current_action._effect_sprite
+							if (variable_struct_exists(current_action, "effect_sprite_no_target")) _effect_sprite = current_action.effect_sprite_no_target;
+							instance_create_depth(x, y, depth-100, obj_battle_effect, {sprite_index : _effect_sprite});
+						}
+						battle_state = battle_state_finish_action;
+					}
+					else
+					{
+						battle_state = battle_state_select_action;
 					}
 				}
 				else
 				{
-					var _effect_sprite = current_action._effect_sprite
-					if (variable_struct_exists(current_action, "effect_sprite_no_target")) _effect_sprite = current_action.effect_sprite_no_target;
-					instance_create_depth(x, y, depth-100, obj_battle_effect, {sprite_index : _effect_sprite});
+					battle_state = battle_state_finish_action;
 				}
-				current_action.func(current_user, current_targets);
-				battle_state = battle_state_finish_action;
 			}
 		}
 	}

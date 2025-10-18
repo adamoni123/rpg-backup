@@ -37,8 +37,5 @@ function battle_change_hp(_target, _amount, _alive_dead_or_either)
 
 function battle_change_mp(_target, _amount)
 {
-	var _failed = false;
-	if (_target.mp <= 0) _failed = true;
-	
-	if (!_failed) _target.mp = clamp(_target.mp + _amount, 0, _target.max_mp);
+	_target.mp = clamp(_target.mp + _amount, 0, _target.max_mp);
 }
