@@ -11,6 +11,14 @@ xspd = (right_key - left_key) * move_spd;
 yspd = (down_key - up_key) * move_spd;
 
 
+// pause
+if instance_exists(obj_pauiser)
+{
+	xspd = 0;
+	yspd = 0;
+}
+
+
 // set sprite and animations
 mask_index = sprite[DOWN];
 if yspd == 0 
