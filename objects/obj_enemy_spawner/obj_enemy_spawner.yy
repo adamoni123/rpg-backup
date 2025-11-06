@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_slime",
+  "%Name":"obj_enemy_spawner",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_slime",
+  "name":"obj_enemy_spawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"characters",
-    "path":"folders/Objects/characters.yy",
+    "name":"enemy ai controllers",
+    "path":"folders/Objects/enemy ai controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,9 +32,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_slime",
-    "path":"sprites/spr_slime/spr_slime.yy",
+    "name":"spr_enemy_spawn_zone",
+    "path":"sprites/spr_enemy_spawn_zone/spr_enemy_spawn_zone.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

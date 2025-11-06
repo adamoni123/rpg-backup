@@ -11,8 +11,8 @@
   "name":"obj_warp",
   "overriddenProperties":[],
   "parent":{
-    "name":"misc",
-    "path":"folders/Objects/misc.yy",
+    "name":"walls and warps",
+    "path":"folders/Objects/walls and warps.yy",
   },
   "parentObjectId":{
     "name":"obj_pauiser",

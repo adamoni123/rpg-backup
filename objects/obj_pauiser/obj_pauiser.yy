@@ -6,8 +6,8 @@
   "name":"obj_pauiser",
   "overriddenProperties":[],
   "parent":{
-    "name":"misc",
-    "path":"folders/Objects/misc.yy",
+    "name":"enemy ai controllers",
+    "path":"folders/Objects/enemy ai controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

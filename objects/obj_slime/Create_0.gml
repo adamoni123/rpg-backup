@@ -1,5 +1,5 @@
 path = path_add();
 
-image_index = irandom(16)
+image_index = irandom(29)
 
 alarm[0] = 1;

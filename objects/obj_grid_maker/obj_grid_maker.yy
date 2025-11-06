@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_warp_block",
+  "%Name":"obj_grid_maker",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_warp_block",
+  "name":"obj_grid_maker",
   "overriddenProperties":[],
   "parent":{
-    "name":"walls and warps",
-    "path":"folders/Objects/walls and warps.yy",
+    "name":"enemy ai controllers",
+    "path":"folders/Objects/enemy ai controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_warp_block",
-    "path":"sprites/spr_warp_block/spr_warp_block.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
