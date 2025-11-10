@@ -16,6 +16,3 @@ if (!created_initialy)
         current_enemies++;
     }
 }
-
-show_debug_message("Current enemies: " + string(current_enemies));
-show_debug_message("Max enemies: " + string(max_enemies));

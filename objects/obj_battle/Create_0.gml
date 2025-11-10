@@ -1,4 +1,6 @@
 instance_deactivate_all(true);
+audio_pause_sound(snd_town_theme);
+audio_play_sound(snd_battle_start, 1, true);
 
 units = [];
 turn = 0;
@@ -261,6 +263,8 @@ function battle_state_victory_check()
 			global.party[i].mp = party_units[i].mp;
 		}
 		instance_activate_all();
+		audio_stop_sound(snd_battle_start);
+		audio_resume_sound(snd_town_theme);
 		instance_destroy(creator);
 		instance_destroy();	
 	}
