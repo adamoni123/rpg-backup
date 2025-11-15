@@ -1,3 +1,3 @@
-target_x = 288;
-target_y = 335;
+target_x = 111;
+target_y = 116;
 target_rm = rm_house_main;
