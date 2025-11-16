@@ -32,6 +32,7 @@
     {"name":"inst_68CB5345","path":"rooms/rm_town/rm_town.yy",},
     {"name":"inst_468AD577","path":"rooms/rm_town/rm_town.yy",},
     {"name":"inst_713243FA","path":"rooms/rm_town/rm_town.yy",},
+    {"name":"inst_17E2AE56","path":"rooms/rm_town/rm_town.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -60,6 +61,7 @@
       ],"layers":[],"name":"walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRInstanceLayer":"","%Name":"warps","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_5BCC6A81","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5BCC6A81","objectId":{"name":"obj_warp_block","path":"objects/obj_warp_block/obj_warp_block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.375,"x":120.0,"y":170.0,},
+        {"$GMRInstance":"v4","%Name":"inst_17E2AE56","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17E2AE56","objectId":{"name":"obj_warp_block","path":"objects/obj_warp_block/obj_warp_block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.375,"x":344.0,"y":170.0,},
       ],"layers":[],"name":"warps","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tlie_houses_back","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tlie_houses_back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":37,"SerialiseWidth":50,"TileCompressedData":[
           -303,-2147483648,-3,0,12,1,2,3,4,0,5,101,102,103,104,105,106,-3,1,4,2,3,4,0,-28,-2147483648,-3,0,19,

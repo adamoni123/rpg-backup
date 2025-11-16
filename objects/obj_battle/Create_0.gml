@@ -252,7 +252,7 @@ function battle_state_victory_check()
 	
 	if (party_units_by_hp[0].hp <= 0)
 	{
-		room_goto(rm_house_1) // temperary
+		room_goto(rm_testing) // temperary
 	}
 	
 	if (enemy_units_by_hp[0].hp <= 0)
