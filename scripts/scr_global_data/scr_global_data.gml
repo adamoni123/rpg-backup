@@ -34,16 +34,22 @@ global.action_library =
 		failed: undefined,
 		func: function(_user, _targets)
 		{
-
+			
 			if (_user.mp < mp_cost) failed = true;
 			else failed = false;
+			
+			total_intelligence = 0;
+			for (var i = 0; i < array_length(_targets); i++)
+			{
+				total_intelligence += _targets[i].intelligence;
+			}
 			
 			if (failed = false) 
 			{
 				for (var i = 0; i < array_length(_targets); i++)
 				{
-					var _damage = ceil( ( (_user.intelligence * 1.5) + irandom_range(-_user.intelligence * 0.5, _user.intelligence * 1.5)) - irandom_range(_targets[0].endurance * 0.5, _targets[0].endurance) )
-					if (array_length(_targets) > 1) _damage = ceil(irandom_range(_user.intelligence, _user.intelligence * 1.5))
+					var _damage = ceil( random_range(_user.intelligence, _user.intelligence * 1.5) - random_range(0, total_intelligence / array_length(_targets) * 1.25))
+					if (array_length(_targets) > 1) _damage = ceil(random_range(_user.intelligence, _user.intelligence * 2.5) - random(_targets[i].intelligence * 0.75));
 					battle_change_hp(_targets[i], -_damage, 0)
 				}
 				battle_change_mp(_user, -mp_cost);
@@ -69,10 +75,10 @@ global.party =
 		mp: 15,
 		max_mp: 15,
 		attack_power: 1,
-		strength: 5,
-		agility: 5,
-		intelligence: 5,
-		endurance: 5,
+		strength: 3,
+		agility: 3,
+		intelligence: 3,
+		endurance: 3,
 		actions: [global.action_library.attack, global.action_library.ice],
 		sprites: { idle: spr_player_right, attack: spr_player_down, down: spr_player_down } // temp sprites
 		}
